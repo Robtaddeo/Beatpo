@@ -15,7 +15,9 @@ var path = require('path')
 gulp.task('css', function(){
     return gulp.src(
             [
-                './assets/css/bootstrap.css',
+              './assets/css/core.min.css',
+              './assets/css/thesaas.css',
+              './assets/css/stly.css',
             ]
         )
         .pipe(sourcemaps.init())
@@ -33,7 +35,10 @@ gulp.task('js', function(){
     return gulp.src(
             [
                 './assets/js/jquery.js',
-                './assets/js/dropzone.js'
+                './assets/js/dropzone.js',
+                './assets/js/core.min.js',
+                './assets/js/thesaas.js',
+                './assets/js/script.js',
             ]
         )
         .pipe(sourcemaps.init())
@@ -66,6 +71,13 @@ gulp.task('copy-images', function(){
         .pipe(gulp.dest('./dist/images/'))
 })
 
+gulp.task('copy-fonts', function(){
+    return gulp.src(
+            ['./assets/fonts/**']
+        )
+        .pipe(gulp.dest('./dist/fonts/'))
+})
+
 gulp.task('copy-readme', function(){
     return gulp.src(
             ['README.md']
@@ -73,7 +85,7 @@ gulp.task('copy-readme', function(){
         .pipe(gulp.dest('./dist/'))
 })
 
-gulp.task('copy', ['copy-images', 'copy-readme'], function(){})
+gulp.task('copy', ['copy-images', 'copy-fonts', 'copy-readme'], function(){})
 
 // specify watch files here:
 gulp.task('watch', function() {
@@ -82,6 +94,3 @@ gulp.task('watch', function() {
 
 gulp.task('prod', ['style', 'copy', 'js', 'app'], function(){})
 gulp.task('default', ['style', 'copy', 'js', 'app', 'watch'], function(){})
-
-
-
