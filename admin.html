@@ -38,6 +38,7 @@
             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
             <li class="nav-item"><a class="nav-link" href="index.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" id="nav-logout" href="#">Logout</a></li>
           <ul>
       </div>
     </nav>
@@ -92,16 +93,23 @@
 
             <div class="col-12 col-lg-4">
               <div class="cart-price">
-                  <h3 class="text-capitalize" id="header-username"></h3>
+                  <div style="float:right">
+                    <img id="profile-icon" style="width:96px;height:96px;border-radius:48px;border:1px dotted #ddd" src="#" />
+                    <br />
+                  </div>
+
+                  <h3 class="text-capitalize" id="header-name"></h3>
+                  <h6 class="text-capitalize" id="header-username"></h6>
+                  <span>Edit Profile</span>
                   <hr />
                   <ul>
-                    <li>10 Beats for sale</li>
-                    <li>100 Followers</li>
+                  	<li>10 Tracks</li>
+                  	<li>100 Followers</li>
                   </ul>
-                  <hr>
-                  <button id="btn-upload" class="btn btn-info" style="width: 100%;">Upload New Beat</button>
+                  <textarea class="form-control" placeholder="Bio"></textarea>
+                  <hr />
+                  <button id="btn-upload" class="btn btn-info">Upload Track</button>
               </div>
-
 
             </div>
           </div>
