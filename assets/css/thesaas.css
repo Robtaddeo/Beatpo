@@ -9001,3 +9001,7 @@ a.text-danger:hover, a.text-danger:focus {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+.logo-default, .logo-inverse {
+  width: 70px;
+}
