@@ -36,16 +36,7 @@
         <div class="topbar-right">
           <ul class="topbar-nav nav">
             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="index.html">Contact</a></li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Login <i class="fa fa-caret-down"></i></a>
-              <div class="nav-submenu">
-                <input id="input-username-login" type="text" placeholder="Name" class="form-control" /><br />
-                <input id="input-password-login" type="password" placeholder="Password" class="form-control" /><hr />
-                <button id="btn-login" class="btn btn-info" style="width: 100%;">Login</button>
-              </div>
-            </li>
+            <li class="nav-item"><a href="#" data-toggle="modal" data-target="#login-modal">Log In</a></li>
           <ul>
       </div>
     </nav>
@@ -73,10 +64,10 @@
 
 
     <!-- Main container -->
-    <main class="main-content">
+    <main style="background-color"class="main-content">
 
 
-      <section class="section">
+      <section class="section bg-gray">
         <div class="container">
 
           <div class="row gap-y">
@@ -84,7 +75,7 @@
               <h1 class="text-center">Featured Beats:</h1>
               <hr>
               <div class="row">
-                <div style="border-radius: 15px;background-color: #ecf0f1;padding-top: 20px; margin: 20px;" class="col-12 col-lg-3">
+                <div  id="beat-info" class="col-12 col-lg-3">
                   <div class="panel panel-default">
                     <div class="panel-heading">
                       <center><img src="/dist/images/playbutton.png" style="width:96px;height:96px;border-radius:48px;border:1px dotted #ddd;"></center>
@@ -96,7 +87,7 @@
                     </div>
                   </div>
                 </div>
-                <div style="border-radius: 15px;background-color: #ecf0f1;padding-top: 20px; margin: 20px;" class="col-12 col-lg-3">
+                <div id="beat-info" class="col-12 col-lg-3">
                   <div class="panel panel-default">
                     <div class="panel-heading">
                       <center><img src="/dist/images/playbutton.png" style="width:96px;height:96px;border-radius:48px;border:1px dotted #ddd;"></center>
@@ -108,7 +99,7 @@
                     </div>
                   </div>
                 </div>
-                <div style="border-radius: 15px;background-color: #ecf0f1;padding-top: 20px; margin: 20px;" class="col-12 col-lg-3">
+                <div  id="beat-info" class="col-12 col-lg-3">
                   <div class="panel panel-default">
                     <div class="panel-heading">
                       <center><img src="/dist/images/playbutton.png" style="width:96px;height:96px;border-radius:48px;border:1px dotted #ddd;"></center>
@@ -120,7 +111,7 @@
                     </div>
                   </div>
                 </div>
-                <div style="border-radius: 15px;background-color: #ecf0f1;padding-top: 20px; margin: 20px;" class="col-12 col-lg-3">
+                <div id="beat-info" class="col-12 col-lg-3">
                   <div class="panel panel-default">
                     <div class="panel-heading">
                       <center><img src="/dist/images/playbutton.png" style="width:96px;height:96px;border-radius:48px;border:1px dotted #ddd;"></center>
@@ -132,7 +123,7 @@
                     </div>
                   </div>
                 </div>
-                <div style="border-radius: 15px;background-color: #ecf0f1;padding-top: 20px; margin: 20px;" class="col-12 col-lg-3">
+                <div  id="beat-info" class="col-12 col-lg-3">
                   <div class="panel panel-default">
                     <div class="panel-heading">
                       <center><img src="/dist/images/playbutton.png" style="width:96px;height:96px;border-radius:48px;border:1px dotted #ddd;"></center>
@@ -144,7 +135,7 @@
                     </div>
                   </div>
                 </div>
-                <div style="border-radius: 15px;background-color: #ecf0f1;padding-top: 20px; margin: 20px;" class="col-12 col-lg-3">
+                <div id="beat-info" class="col-12 col-lg-3">
                   <div class="panel panel-default">
                     <div class="panel-heading">
                       <center><img src="/dist/images/playbutton.png" style="width:96px;height:96px;border-radius:48px;border:1px dotted #ddd;"></center>
@@ -156,9 +147,9 @@
                     </div>
                   </div>
                 </div>
-              
-                <center><button id="button-seemore" class="btn btn-primary" style="width: 100%"> See More Beats</button></center>
               </div>
+                <center><a href="/dashboard"><button id="button-seemore" class="btn btn-success" style="width: 100%"> See More Beats</button></a></center>
+
             </div>
             <div class="col-12 col-lg-4">
               <div class="cart-price">
@@ -191,7 +182,23 @@
     <!-- END Main container -->
 
 
+    <!-- Modals -->
+    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    	  <div class="modal-dialog">
+				<div class="loginmodal-container">
+					<h1>Login to Your Account</h1><br>
+				  <form>
+            <input id="input-username-login" type="text" placeholder="Username" class="form-control" /><br />
+            <input id="input-password-login" type="password" placeholder="Password" class="form-control" /><hr />
+            <button type="submit" id="btn-login" style="width: 100%;margin-bottom: 10px;" class="btn btn-info">Login</button><br />
+				  </form>
 
+				  <div class="login-help">
+					<a href="#">Register</a> - <a href="#">Forgot Password</a>
+				  </div>
+				</div>
+			</div>
+		  </div>
 
 
 

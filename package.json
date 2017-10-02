@@ -29,7 +29,8 @@
   "deploy": [
     "index.html",
     "dist",
-    "admin.html"
+    "admin.html",
+    "dashboard.html.html"
   ],
   "app": "59ce9f1f448851001216bdb7"
 }
