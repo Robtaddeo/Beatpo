@@ -110,7 +110,8 @@
 			username: $('#input-username').val(),
 			name: $('#input-name').val(),
 			email: $('#input-email').val(),
-			password: $('#input-password').val()
+			password: $('#input-password').val(),
+
 		}
 
 		if (visitor.name.length == 0){
@@ -120,6 +121,11 @@
 
 		if (visitor.email.length == 0){
 			alert('Please enter your email')
+			return
+		}
+
+		if ($('#input-password-confirm').val() != visitor.password){
+			alert('Your passwords do not match')
 			return
 		}
 
@@ -190,5 +196,12 @@
 	})
 })
 
+	// if (currentUser == null){
+	// 	$('#login-logout').html("Login")
+	// }
+	//
+	// if (currentUser != null){
+	// 	$('#login-logout').html("Logout")
+	// }
 
 })()

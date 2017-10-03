@@ -30,7 +30,9 @@
     "index.html",
     "dist",
     "admin.html",
-    "dashboard.html.html"
+    "dashboard.html.html",
+    "indexcopy.html",
+    "register.html"
   ],
   "app": "59ce9f1f448851001216bdb7"
 }

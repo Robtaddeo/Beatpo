@@ -35,8 +35,9 @@
 
         <div class="topbar-right">
           <ul class="topbar-nav nav">
-            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-            <li class="nav-item"><a href="#" data-toggle="modal" data-target="#login-modal">Log In</a></li>
+            <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+            <li class="nav-item"><a class="nav-link" id="login-logout" href="#" data-toggle="modal" data-target="#login-modal">Log In</a></li>
+            <li class="nav-item"><a class="nav-link" href="/register">Register</a></li>
           <ul>
       </div>
     </nav>
@@ -51,6 +52,10 @@
 
             <h1>Hop on any Track</h1>
             <p class="fs-20 opacity-70">Pick from more than 10,000 beats to use for your music, or put your own beats up for others to use</p>
+            <p class="text-center">
+              <a href="/register"><button class="btn btn-lg btn-round btn-secondary btn-outline">Sign Me Up</button></a>
+            </p>
+
 
           </div>
         </div>
@@ -65,120 +70,228 @@
 
     <!-- Main container -->
     <main style="background-color"class="main-content">
-
-
       <section class="section bg-gray">
         <div class="container">
 
-          <div class="row gap-y">
-            <div class="col-12 col-lg-8">
-              <h1 class="text-center">Featured Beats:</h1>
-              <hr>
-              <div class="row">
-                <div  id="beat-info" class="col-12 col-lg-3">
-                  <div class="panel panel-default">
-                    <div class="panel-heading">
-                      <center><img src="/dist/images/playbutton.png" style="width:96px;height:96px;border-radius:48px;border:1px dotted #ddd;"></center>
-                      <hr>
-                    </div>
-                    <div class="panel-body">
-                      <h4 class="text-center">Beat Name</h4>
-                      <p style="float: left;">Artist </p><p style="float: right;">$40</p>
-                    </div>
-                  </div>
-                </div>
-                <div id="beat-info" class="col-12 col-lg-3">
-                  <div class="panel panel-default">
-                    <div class="panel-heading">
-                      <center><img src="/dist/images/playbutton.png" style="width:96px;height:96px;border-radius:48px;border:1px dotted #ddd;"></center>
-                      <hr>
-                    </div>
-                    <div class="panel-body">
-                      <h4 class="text-center">Beat Name</h4>
-                      <p style="float: left;">Artist </p><p style="float: right;">$40</p>
-                    </div>
-                  </div>
-                </div>
-                <div  id="beat-info" class="col-12 col-lg-3">
-                  <div class="panel panel-default">
-                    <div class="panel-heading">
-                      <center><img src="/dist/images/playbutton.png" style="width:96px;height:96px;border-radius:48px;border:1px dotted #ddd;"></center>
-                      <hr>
-                    </div>
-                    <div class="panel-body">
-                      <h4 class="text-center">Beat Name</h4>
-                      <p style="float: left;">Artist </p><p style="float: right;">$40</p>
-                    </div>
-                  </div>
-                </div>
-                <div id="beat-info" class="col-12 col-lg-3">
-                  <div class="panel panel-default">
-                    <div class="panel-heading">
-                      <center><img src="/dist/images/playbutton.png" style="width:96px;height:96px;border-radius:48px;border:1px dotted #ddd;"></center>
-                      <hr>
-                    </div>
-                    <div class="panel-body">
-                      <h4 class="text-center">Beat Name</h4>
-                      <p style="float: left;">Artist </p><p style="float: right;">$40</p>
-                    </div>
-                  </div>
-                </div>
-                <div  id="beat-info" class="col-12 col-lg-3">
-                  <div class="panel panel-default">
-                    <div class="panel-heading">
-                      <center><img src="/dist/images/playbutton.png" style="width:96px;height:96px;border-radius:48px;border:1px dotted #ddd;"></center>
-                      <hr>
-                    </div>
-                    <div class="panel-body">
-                      <h4 class="text-center">Beat Name</h4>
-                      <p style="float: left;">Artist </p><p style="float: right;">$40</p>
-                    </div>
-                  </div>
-                </div>
-                <div id="beat-info" class="col-12 col-lg-3">
-                  <div class="panel panel-default">
-                    <div class="panel-heading">
-                      <center><img src="/dist/images/playbutton.png" style="width:96px;height:96px;border-radius:48px;border:1px dotted #ddd;"></center>
-                      <hr>
-                    </div>
-                    <div class="panel-body">
-                      <h4 class="text-center">Beat Name</h4>
-                      <p style="float: left;">Artist </p><p style="float: right;">$40</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-                <center><a href="/dashboard"><button id="button-seemore" class="btn btn-success" style="width: 100%"> See More Beats</button></a></center>
+          <!-- <form>
+            <center>
+              <input class="form-control" id="main-search" name="search" placeholder="Search for beats, artists, or genres" />
+              <span class="input-group-addon">
+                <i class="glyphicon glyphicon-search">
+              </span>
+            </center>
+          </form>
+          <br /> -->
 
+          <!-- Start Of Trending Beats  -->
+
+          <h3 class="text-center">Listen to what's trending: </h3><br />
+          <div class="row gap-y" style="padding-bottom: 20px;">
+
+            <div class="col-12 col-md-6 col-lg-3">
+              <a class="shop-item" href="shop-single.html">
+                <div class="item-details">
+                  <div>
+                    <h5>Michael Jackson</h5>
+                    <p>Thriller</p>
+                  </div>
+
+                  <div class="item-price"><span class="unit">$</span>9</div>
+                </div>
+                <img src="dist/images/album_cover_test.jpg" alt="product">
+              </a>
             </div>
-            <div class="col-12 col-lg-4">
-              <div class="cart-price">
-                  <h3>Join Beatpo</h3>
-                  <hr>
-                  <input id="input-name" type="text" placeholder="Name" class="form-control" /> <br />
-                  <input id="input-email" type="text" placeholder="Email" class="form-control" /> <br />
-                  <input id="input-username" type="text" placeholder="Username" class="form-control" /> <br />
-                  <input id="input-password" type="password" placeholder="Password" class="form-control" /> <br />
-                  <div class="text-right">
-                    <button id="button-join" class="btn btn-primary" style="width: 100%" type="submit">Sign Up <i class="ti-angle-right       fs-9"></i></button>
+            <div class="col-12 col-md-6 col-lg-3">
+              <a class="shop-item" href="shop-single.html">
+                <div class="item-details">
+                  <div>
+                    <h5>Michael Jackson</h5>
+                    <p>Thriller</p>
                   </div>
-              </div>
 
-
+                  <div class="item-price"><span class="unit">$</span>9</div>
+                </div>
+                <img src="dist/images/album_cover_test.jpg" alt="product">
+              </a>
             </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <a class="shop-item" href="shop-single.html">
+                <div class="item-details">
+                  <div>
+                    <h5>Thriller</h5>
+                    <p>Michael Jackson</p>
+                  </div>
+
+                  <div class="item-price"><span class="unit">$</span>9</div>
+                </div>
+                <img src="dist/images/album_cover_test.jpg" alt="product">
+              </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <a class="shop-item" href="shop-single.html">
+                <div class="item-details">
+                  <div>
+                    <h5>Michael Jackson</h5>
+                    <p>Thriller</p>
+                  </div>
+
+                  <div class="item-price"><span class="unit">$</span>9</div>
+                </div>
+                <img src="dist/images/album_cover_test.jpg" alt="product">
+              </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <a class="shop-item" href="shop-single.html">
+                <div class="item-details">
+                  <div>
+                    <h5>Michael Jackson</h5>
+                    <p>Thriller</p>
+                  </div>
+
+                  <div class="item-price"><span class="unit">$</span>9</div>
+                </div>
+                <img src="dist/images/album_cover_test.jpg" alt="product">
+              </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <a class="shop-item" href="shop-single.html">
+                <div class="item-details">
+                  <div>
+                    <h5>Michael Jackson</h5>
+                    <p>Thriller</p>
+                  </div>
+
+                  <div class="item-price"><span class="unit">$</span>9</div>
+                </div>
+                <img src="dist/images/album_cover_test.jpg" alt="product">
+              </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <a class="shop-item" href="shop-single.html">
+                <div class="item-details">
+                  <div>
+                    <h5>Michael Jackson</h5>
+                    <p>Thriller</p>
+                  </div>
+
+                  <div class="item-price"><span class="unit">$</span>9</div>
+                </div>
+                <img src="dist/images/album_cover_test.jpg" alt="product">
+              </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+              <a class="shop-item" href="shop-single.html">
+                <div class="item-details">
+                  <div>
+                    <h5>Michael Jackson</h5>
+                    <p>Thriller</p>
+                  </div>
+
+                  <div class="item-price"><span class="unit">$</span>9</div>
+                </div>
+                <img src="dist/images/album_cover_test.jpg" alt="product">
+              </a>
+            </div>
+            <br />
           </div>
 
+          <div class="text-center">
+              <p class="text-center">
+              <center>
+                <button class="btn btn-info-outline">Explore More Beats</button>
+              </center>
+              </p>
+            </div>
+
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- End of Popular Beats List  -->
+
+            <!-- Start of info area -->
+
+            <section class="section p-0 hidden-sm-down bg-bray">
+              <div class="container-wide">
+                <div class="row no-gap">
+
+                  <div class="col-12 col-md-6 bg-img" style="background-image: url(/dist/images/bg-mic.jpg)"></div>
 
 
-        </div>
-      </section>
+                  <div class="col-12 offset-md-1 col-md-4 py-90">
+                    <p><small>For Artists</small></p>
+                    <h3>Be The Next Big Thing: </h3>
+                    <p>Search through Beatpo's thousands of beats to find something that slaps. Who knows, you could be the next one to pop-off.</p>
+                    <br>
+                    <a class="btn btn-round btn-primary" href="#">Get Started</a>
+                  </div>
 
 
+                  <div class="col-12 offset-md-1 col-md-4 py-90">
+                    <p><small>For Producers</small></p>
+                    <h3>Show the world your best beats: </h3>
+                    <p>Think you're the best producer on SoundCloud right now? Prove it here. Sell your beats for a price you choose to users all over the world.</p>
+                    <br>
+                    <a class="btn btn-round btn-primary" href="#">Get Started</a>
+                  </div>
 
 
+                  <div class="col-12 offset-md-1 col-md-6 bg-img" style="background-image: url(/dist/images/bg-dj.jpg)"></div>
+                </div>
+              </div>
+            </section>
+
+            <!-- End of info Area  -->
+            <!-- Second Sign Up area  -->
+
+            <section class="section text-center bg-gray">
+              <header class="section-header">
+                <small><strong>Beatpo</strong></small>
+                <h2 class="fs-45 fw-900">Now, would you like to try it out?</h2>
+                <hr>
+                <p class="lead">Come on, you know you want to sign up. We can see you smiling face through your webcam! No just kidding but seriously though sign up.</p>
+              </header>
 
 
-    </main>
+              <div class="row">
+                <div class="col-12 offset-md-3 col-md-6 offset-lg-4 col-lg-4">
+                  <form>
+                    <div class="form-group">
+                      <input id="input-username" type="text" class="form-control form-control-lg" placeholder="Username">
+                    </div>
+
+                    <div class="form-group">
+                      <input id="input-name" type="text" class="form-control form-control-lg" placeholder="Name">
+                    </div>
+
+                    <div class="form-group">
+                      <input id="input-email" type="text" class="form-control form-control-lg" placeholder="Email">
+                    </div>
+
+                    <div class="form-group">
+                      <input id="input-password" type="password" class="form-control form-control-lg" placeholder="Password">
+                    </div>
+
+                    <div class="form-group">
+                      <input id="input-password-confirm" type="password" class="form-control form-control-lg" placeholder="Confirm Password">
+                    </div>
+
+                  <p class="small">By signing up you automatically agree to our <a href="#">Terms and Conditions</a> Don't worry, we won't sell your soul or anything.</p>
+
+                    <button id="button-join" class="btn btn-block btn-lg btn-success">Sign up</button>
+                  </form>
+
+                  <br>
+                  <p class="small">Already Have an Account? <a href="#login-modal" target="modal">Sign In</a></p>
+                </div>
+              </div>
+
+            </section>
+
+            <!-- End of Signup Area  -->
+
+
     <!-- END Main container -->
 
 
@@ -194,7 +307,7 @@
 				  </form>
 
 				  <div class="login-help">
-					<a href="#">Register</a> - <a href="#">Forgot Password</a>
+					<a href="/register">Register</a> - <a href="#">Forgot Password</a>
 				  </div>
 				</div>
 			</div>
