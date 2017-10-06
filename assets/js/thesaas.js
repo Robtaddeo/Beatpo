@@ -52,7 +52,7 @@
 
 
     // Google map
-    // 
+    //
     if ( $('[data-provide~="map"]').length && window["google.maps.Map"] === undefined ) {
       $.getScript("https://maps.googleapis.com/maps/api/js?key="+ thesaas.defaults.googleApiKey +"&callback=thesaas.map");
     }
@@ -149,7 +149,7 @@
 
 
     // Drawer
-    // 
+    //
     $(document).on( 'click', '.drawer-toggler, .drawer-close, .drawer-backdrop', function() {
       $('body').toggleClass( 'drawer-open' );
     } );
@@ -181,7 +181,7 @@
       });
 
     });
-    
+
   }
 
 
@@ -420,15 +420,15 @@
   //----------------------------------------------------/
   thesaas.topbar = function() {
 
-    var body = $('body');
-    $(window).on('scroll', function() {
-      if ($(document).scrollTop() > 10) {
-        body.addClass('body-scrolled');
-      }
-      else {
-        body.removeClass('body-scrolled');
-      }
-    });
+    // var body = $('body');
+    // // $(window).on('scroll', function() {
+    // //   if ($(document).scrollTop() > 10) {
+    // //     body.addClass('body-scrolled');
+    // //   }
+    // //   else {
+    // //     body.removeClass('body-scrolled');
+    // //   }
+    // // });
 
 
     // Open menu on click
@@ -441,7 +441,7 @@
       if ( '#' == link.attr('href') ) {
         e.preventDefault();
       }
-      
+
       siblings.removeClass('show');
       siblings.find('.nav-item.show').removeClass('show');
       item.toggleClass('show');
@@ -449,7 +449,7 @@
 
 
     // Topbar toggler
-    // 
+    //
     $(document).on('click', '.topbar-toggler', function(){
       //body.toggleClass('topbar-reveal').prepend('<div class="topbar-backdrop"></div>');
       body.toggleClass('topbar-reveal');
@@ -514,7 +514,7 @@
   thesaas.contact = function() {
 
     $(document).on('click', '#contact-send', function(){
-      
+
       var name = $("#contact-name").val();
       var email = $("#contact-email").val();
       var message = $("#contact-message").val();

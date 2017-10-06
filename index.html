@@ -35,16 +35,19 @@
 
         <div class="topbar-right">
           <ul class="topbar-nav nav">
-            <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-            <li class="nav-item"><a class="nav-link" id="login-logout" href="#" data-toggle="modal" data-target="#login-modal">Log In</a></li>
-            <li class="nav-item"><a class="nav-link" href="/register">Register</a></li>
-          <ul>
+            <li class="nav-item"><a class="nav-link" data-scrollto="top">Home</a></li>
+          </ul>
+            <div class="d-inline-flex ml-30">
+              <a class="btn btn-sm btn-primary mr-4"  id="login-logout" href="#" data-toggle="modal" data-target="#login-modal">Login</a>
+              <a class="btn btn-sm btn-outline btn-primary hidden-sm-down" data-scrollto="register-section" >Register</a>
+            </div>
+        </div>
       </div>
     </nav>
     <!-- END Topbar -->
 
     <!-- Header -->
-    <header class="header header-inverse bg-fixed" style="background-image: url(/dist/images/bg-gift.jpg)" data-overlay="8">
+    <header id="top" class="header header-inverse bg-fixed" style="background-image: url(/dist/images/bg-gift.jpg)" data-overlay="6">
       <div class="container text-center">
 
         <div class="row">
@@ -53,7 +56,7 @@
             <h1>Hop on any Track</h1>
             <p class="fs-20 opacity-70">Pick from more than 10,000 beats to use for your music, or put your own beats up for others to use</p>
             <p class="text-center">
-              <a href="/register"><button class="btn btn-lg btn-round btn-secondary btn-outline">Sign Me Up</button></a>
+              <a data-scrollto="register-section"><button class="btn btn-lg btn-round btn-secondary btn-outline">Sign Me Up</button></a>
             </p>
 
 
@@ -69,19 +72,21 @@
 
 
     <!-- Main container -->
+
     <main style="background-color"class="main-content">
       <section class="section bg-gray">
         <div class="container">
 
           <!-- <form>
-            <center>
-              <input class="form-control" id="main-search" name="search" placeholder="Search for beats, artists, or genres" />
-              <span class="input-group-addon">
-                <i class="glyphicon glyphicon-search">
-              </span>
-            </center>
-          </form>
-          <br /> -->
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search">
+              <div class="input-group-btn">
+                <button class="btn btn-default" type="submit">
+                  <i class="glyphicon glyphicon-search"></i>
+                </button>
+              </div>
+            </div>
+          </form> -->
 
           <!-- Start Of Trending Beats  -->
 
@@ -197,11 +202,11 @@
 
           <div class="text-center">
               <p class="text-center">
-              <center>
-                <button class="btn btn-info-outline">Explore More Beats</button>
-              </center>
+                <center>
+                  <a href="/dash"><button class="btn btn-info-outline">Explore More Beats</button></a>
+                </center>
               </p>
-            </div>
+          </div>
 
                   </div>
                 </div>
@@ -216,15 +221,15 @@
               <div class="container-wide">
                 <div class="row no-gap">
 
-                  <div class="col-12 col-md-6 bg-img" style="background-image: url(/dist/images/bg-mic.jpg)"></div>
+                  <div class="col-12 col-md-6 bg-img" style="background-image: url(/dist/images/bg-mic.jpg); background-size: cover;"></div>
 
 
                   <div class="col-12 offset-md-1 col-md-4 py-90">
                     <p><small>For Artists</small></p>
-                    <h3>Be The Next Big Thing: </h3>
+                    <h3>Be the next big thing: </h3>
                     <p>Search through Beatpo's thousands of beats to find something that slaps. Who knows, you could be the next one to pop-off.</p>
                     <br>
-                    <a class="btn btn-round btn-primary" href="#">Get Started</a>
+                    <a class="btn btn-round btn-primary" style="color: white;" data-scrollto="register-section">Get Started</a>
                   </div>
 
 
@@ -233,7 +238,7 @@
                     <h3>Show the world your best beats: </h3>
                     <p>Think you're the best producer on SoundCloud right now? Prove it here. Sell your beats for a price you choose to users all over the world.</p>
                     <br>
-                    <a class="btn btn-round btn-primary" href="#">Get Started</a>
+                    <a class="btn btn-round btn-primary" style="color: white;" data-scrollto="register-section">Get Started</a>
                   </div>
 
 
@@ -257,7 +262,7 @@
               <div class="row">
                 <div class="col-12 offset-md-3 col-md-6 offset-lg-4 col-lg-4">
                   <form>
-                    <div class="form-group">
+                    <div class="form-group" id="register-section">
                       <input id="input-username" type="text" class="form-control form-control-lg" placeholder="Username">
                     </div>
 
@@ -283,7 +288,7 @@
                   </form>
 
                   <br>
-                  <p class="small">Already Have an Account? <a href="#login-modal" target="modal">Sign In</a></p>
+                  <p class="small">Already Have an Account? <a id="login-logout" href="#" data-toggle="modal" data-target="#login-modal">Sign In</a></p>
                 </div>
               </div>
 
@@ -321,7 +326,7 @@
         <div class="row gap-y align-items-center">
           <div class="col-12 col-lg-3">
             <p class="text-center text-lg-left">
-              <a href="index.html"><img class="logo-default" src="/dist/images/logo.png" alt="logo"></a>
+              <a href="/"><img class="logo-default" src="/dist/images/logo.png" alt="logo"></a>
             </p>
           </div>
 
