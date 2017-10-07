@@ -6,10 +6,11 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
 
-    <title>TheSaaS - Cart overview</title>
+    <title>Beatpo</title>
 
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="/dist/css/style.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800|Dosis:300,600">
 
     <!-- Favicons -->
@@ -47,17 +48,21 @@
 
 
     <!-- Header -->
-    <header class="header header-inverse bg-fixed" style="background-image: url(/dist/images/bg-gift.jpg)" data-overlay="8">
+    <header class="header header-inverse bg-fixed" style="background-image: url(/dist/images/bg-records.jpg)" data-overlay="8">
       <div class="container text-center">
 
         <div class="row">
           <div class="col-12 col-lg-8 offset-lg-2">
 
-            <h1>Cart Overview</h1>
-            <p class="fs-20 opacity-70">Take a look inside your cart. Make sure you have everything you needed.</p>
-
+            <h1>Let's find you a beat.</h1><br />
+              <div class="box" width="400px;">
+                <div width="400px;" class="container-1">
+                  <input width="400px;" class="form-control-md" type="search" id="search" placeholder="Search for an artist, track, or genre" />
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
+
 
       </div>
     </header>
@@ -86,9 +91,57 @@
               <div class="cart-price">
                 <div class="flexbox">
                   <div>
-                    <h3> Categories: </h3>
+                    <h3> Search For: </h3>
+                    <hr />
+                    <div class="custom-controls-stacked">
+                      <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input">
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">Rap</span>
+                      </label>
+                      <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input">
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">Trap</span>
+                      </label>
+                      <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input">
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">Pop</span>
+                      </label>
+                      <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input">
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">EDM</span>
+                      </label>
+                      <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input">
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">Jazz</span>
+                      </label>
+                      <label class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input">
+                        <span class="custom-control-indicator"></span>
+                        <span class="custom-control-description">Reggae</span>
+                      </label>
 
+
+                    </div>
+                    <br />
+                    <label>Price</label>
+                    <p style="font-size: 12px;"><input class="form-control form-control-sm" type="text" placeholder="$ Min"> to <input class="form-control form-control-sm" type="text" placeholder="$ Max"></p>
+                    <br />
+                    <div class="btn-group">
+                      <span class="dropdown-toggle" data-toggle="dropdown">Sort By</span>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Plays</a>
+                        <a class="dropdown-item" href="#">Newest</a>
+                        <a class="dropdown-item" href="#">Price Low to High</a>
+                        <a class="dropdown-item" href="#">Price High to Low</a>
+                      </div>
+                    </div>
                   </div>
+
 
                 </div>
 
@@ -100,12 +153,14 @@
                 </div>
             </div>
 
-            <div class="col-12 col-lg-7">
+            <div class="col-12 col-lg-8">
 
-              <h2 class="text-left">Top Charts</h2><br />
+              <h1 class="text-left">Discover</h1>
+              <h4 class="text-left"><a id="pop-tag">Popular</a> | <a id="new-tag">Recent</a> | <a id="trending-tag">Trending</a></h4>
+              <br />
 
               <div class="row gap-y">
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-3">
                   <a class="shop-item" href="shop-single.html">
                     <div class="item-details">
                       <div>
@@ -118,7 +173,7 @@
                     <img src="dist/images/album_cover_test.jpg" alt="product">
                   </a>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-3">
                   <a class="shop-item" href="shop-single.html">
                     <div class="item-details">
                       <div>
@@ -131,7 +186,7 @@
                     <img src="dist/images/album_cover_test.jpg" alt="product">
                   </a>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-3">
                   <a class="shop-item" href="shop-single.html">
                     <div class="item-details">
                       <div>
@@ -144,7 +199,7 @@
                     <img src="dist/images/album_cover_test.jpg" alt="product">
                   </a>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-3">
                   <a class="shop-item" href="shop-single.html">
                     <div class="item-details">
                       <div>
@@ -157,7 +212,7 @@
                     <img src="dist/images/album_cover_test.jpg" alt="product">
                   </a>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-3">
                   <a class="shop-item" href="shop-single.html">
                     <div class="item-details">
                       <div>
@@ -170,7 +225,7 @@
                     <img src="dist/images/album_cover_test.jpg" alt="product">
                   </a>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-3">
                   <a class="shop-item" href="shop-single.html">
                     <div class="item-details">
                       <div>
@@ -183,7 +238,189 @@
                     <img src="dist/images/album_cover_test.jpg" alt="product">
                   </a>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-3">
+                  <a class="shop-item" href="shop-single.html">
+                    <div class="item-details">
+                      <div>
+                        <h5>Michael Jackson</h5>
+                        <p>Thriller</p>
+                      </div>
+
+                      <div class="item-price"><span class="unit">$</span>9</div>
+                    </div>
+                    <img src="dist/images/album_cover_test.jpg" alt="product">
+                  </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <a class="shop-item" href="shop-single.html">
+                    <div class="item-details">
+                      <div>
+                        <h5>Michael Jackson</h5>
+                        <p>Thriller</p>
+                      </div>
+
+                      <div class="item-price"><span class="unit">$</span>9</div>
+                    </div>
+                    <img src="dist/images/album_cover_test.jpg" alt="product">
+                  </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <a class="shop-item" href="shop-single.html">
+                    <div class="item-details">
+                      <div>
+                        <h5>Michael Jackson</h5>
+                        <p>Thriller</p>
+                      </div>
+
+                      <div class="item-price"><span class="unit">$</span>9</div>
+                    </div>
+                    <img src="dist/images/album_cover_test.jpg" alt="product">
+                  </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <a class="shop-item" href="shop-single.html">
+                    <div class="item-details">
+                      <div>
+                        <h5>Michael Jackson</h5>
+                        <p>Thriller</p>
+                      </div>
+
+                      <div class="item-price"><span class="unit">$</span>9</div>
+                    </div>
+                    <img src="dist/images/album_cover_test.jpg" alt="product">
+                  </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <a class="shop-item" href="shop-single.html">
+                    <div class="item-details">
+                      <div>
+                        <h5>Michael Jackson</h5>
+                        <p>Thriller</p>
+                      </div>
+
+                      <div class="item-price"><span class="unit">$</span>9</div>
+                    </div>
+                    <img src="dist/images/album_cover_test.jpg" alt="product">
+                  </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <a class="shop-item" href="shop-single.html">
+                    <div class="item-details">
+                      <div>
+                        <h5>Michael Jackson</h5>
+                        <p>Thriller</p>
+                      </div>
+
+                      <div class="item-price"><span class="unit">$</span>9</div>
+                    </div>
+                    <img src="dist/images/album_cover_test.jpg" alt="product">
+                  </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <a class="shop-item" href="shop-single.html">
+                    <div class="item-details">
+                      <div>
+                        <h5>Michael Jackson</h5>
+                        <p>Thriller</p>
+                      </div>
+
+                      <div class="item-price"><span class="unit">$</span>9</div>
+                    </div>
+                    <img src="dist/images/album_cover_test.jpg" alt="product">
+                  </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <a class="shop-item" href="shop-single.html">
+                    <div class="item-details">
+                      <div>
+                        <h5>Michael Jackson</h5>
+                        <p>Thriller</p>
+                      </div>
+
+                      <div class="item-price"><span class="unit">$</span>9</div>
+                    </div>
+                    <img src="dist/images/album_cover_test.jpg" alt="product">
+                  </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <a class="shop-item" href="shop-single.html">
+                    <div class="item-details">
+                      <div>
+                        <h5>Michael Jackson</h5>
+                        <p>Thriller</p>
+                      </div>
+
+                      <div class="item-price"><span class="unit">$</span>9</div>
+                    </div>
+                    <img src="dist/images/album_cover_test.jpg" alt="product">
+                  </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <a class="shop-item" href="shop-single.html">
+                    <div class="item-details">
+                      <div>
+                        <h5>Michael Jackson</h5>
+                        <p>Thriller</p>
+                      </div>
+
+                      <div class="item-price"><span class="unit">$</span>9</div>
+                    </div>
+                    <img src="dist/images/album_cover_test.jpg" alt="product">
+                  </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <a class="shop-item" href="shop-single.html">
+                    <div class="item-details">
+                      <div>
+                        <h5>Michael Jackson</h5>
+                        <p>Thriller</p>
+                      </div>
+
+                      <div class="item-price"><span class="unit">$</span>9</div>
+                    </div>
+                    <img src="dist/images/album_cover_test.jpg" alt="product">
+                  </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <a class="shop-item" href="shop-single.html">
+                    <div class="item-details">
+                      <div>
+                        <h5>Michael Jackson</h5>
+                        <p>Thriller</p>
+                      </div>
+
+                      <div class="item-price"><span class="unit">$</span>9</div>
+                    </div>
+                    <img src="dist/images/album_cover_test.jpg" alt="product">
+                  </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <a class="shop-item" href="shop-single.html">
+                    <div class="item-details">
+                      <div>
+                        <h5>Michael Jackson</h5>
+                        <p>Thriller</p>
+                      </div>
+
+                      <div class="item-price"><span class="unit">$</span>9</div>
+                    </div>
+                    <img src="dist/images/album_cover_test.jpg" alt="product">
+                  </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                  <a class="shop-item" href="shop-single.html">
+                    <div class="item-details">
+                      <div>
+                        <h5>Michael Jackson</h5>
+                        <p>Thriller</p>
+                      </div>
+
+                      <div class="item-price"><span class="unit">$</span>9</div>
+                    </div>
+                    <img src="dist/images/album_cover_test.jpg" alt="product">
+                  </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
                   <a class="shop-item" href="shop-single.html">
                     <div class="item-details">
                       <div>
@@ -201,10 +438,53 @@
               </div>
             </div>
 
-              <div class="col-12 col-lg-3">
+              <div class="col-12 col-lg-2">
                 <div class="cart-price">
                   <div>
                     <h4>Popular Artists</h4>
+                    <hr />
+                    <div class="featured-profile">
+                      <a href="https://www.turbo360.co/user/robtaddeo-pm9ugq"><img src="https://lh3.googleusercontent.com/ptwwXsh6q514fYoTwgLZCH98FbMQLNr0kif03V_QmYl5BebW5mzRCSqKkvKy3bvbPUV2LyKwefq1sV4yxTUS_oFF-to=s44-c"></a>
+                      <div>
+                        <a href="https://www.turbo360.co/user/robtaddeo-pm9ugq" class="fw-200">robtaddeo</a>
+                      </div>
+                    </div>
+                    <div class="featured-profile">
+                      <a href="https://www.turbo360.co/user/robtaddeo-pm9ugq"><img src="https://lh3.googleusercontent.com/ptwwXsh6q514fYoTwgLZCH98FbMQLNr0kif03V_QmYl5BebW5mzRCSqKkvKy3bvbPUV2LyKwefq1sV4yxTUS_oFF-to=s44-c"></a>
+                      <div>
+                        <a href="https://www.turbo360.co/user/robtaddeo-pm9ugq" class="fw-200">robtaddeo</a>
+                      </div>
+                    </div>
+                    <div class="featured-profile">
+                      <a href="https://www.turbo360.co/user/robtaddeo-pm9ugq"><img src="https://lh3.googleusercontent.com/ptwwXsh6q514fYoTwgLZCH98FbMQLNr0kif03V_QmYl5BebW5mzRCSqKkvKy3bvbPUV2LyKwefq1sV4yxTUS_oFF-to=s44-c"></a>
+                      <div>
+                        <a href="https://www.turbo360.co/user/robtaddeo-pm9ugq" class="fw-200">robtaddeo</a>
+                      </div>
+                    </div>
+                    <div class="featured-profile">
+                      <a href="https://www.turbo360.co/user/robtaddeo-pm9ugq"><img src="https://lh3.googleusercontent.com/ptwwXsh6q514fYoTwgLZCH98FbMQLNr0kif03V_QmYl5BebW5mzRCSqKkvKy3bvbPUV2LyKwefq1sV4yxTUS_oFF-to=s44-c"></a>
+                      <div>
+                        <a href="https://www.turbo360.co/user/robtaddeo-pm9ugq" class="fw-200">robtaddeo</a>
+                      </div>
+                    </div>
+                    <div class="featured-profile">
+                      <a href="https://www.turbo360.co/user/robtaddeo-pm9ugq"><img src="https://lh3.googleusercontent.com/ptwwXsh6q514fYoTwgLZCH98FbMQLNr0kif03V_QmYl5BebW5mzRCSqKkvKy3bvbPUV2LyKwefq1sV4yxTUS_oFF-to=s44-c"></a>
+                      <div>
+                        <a href="https://www.turbo360.co/user/robtaddeo-pm9ugq" class="fw-200">robtaddeo</a>
+                      </div>
+                    </div>
+                    <div class="featured-profile">
+                      <a href="https://www.turbo360.co/user/robtaddeo-pm9ugq"><img src="https://lh3.googleusercontent.com/ptwwXsh6q514fYoTwgLZCH98FbMQLNr0kif03V_QmYl5BebW5mzRCSqKkvKy3bvbPUV2LyKwefq1sV4yxTUS_oFF-to=s44-c"></a>
+                      <div>
+                        <a href="https://www.turbo360.co/user/robtaddeo-pm9ugq" class="fw-200">robtaddeo</a>
+                      </div>
+                    </div>
+                    <div class="featured-profile">
+                      <a href="https://www.turbo360.co/user/robtaddeo-pm9ugq"><img src="https://lh3.googleusercontent.com/ptwwXsh6q514fYoTwgLZCH98FbMQLNr0kif03V_QmYl5BebW5mzRCSqKkvKy3bvbPUV2LyKwefq1sV4yxTUS_oFF-to=s44-c"></a>
+                      <div>
+                        <a href="https://www.turbo360.co/user/robtaddeo-pm9ugq" class="fw-200">robtaddeo</a>
+                      </div>
+                    </div>
                   </div>
 
                 </div>

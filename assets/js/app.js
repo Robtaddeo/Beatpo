@@ -4,6 +4,7 @@
 	console.log('Hello Audio Stream!')
 	var currentUser = null
 	var uploading = null
+	var tracks = currentUser.tracks || []
 
 	var uploadFile = function(){
 		turbo.uploadFile(function(err, data){
@@ -36,12 +37,10 @@
 				return
 			}
 
-
 			if (uploading == 'track'){
 				var file = data.result
 
 				// update current user:
-				var tracks = currentUser.tracks || []
 				tracks.push(file)
 
 				turbo.update('user', currentUser, {tracks: tracks}, function(err, data){
@@ -66,11 +65,13 @@
 			return
 
 		var tracksList = ''
-		currentUser.tracks.forEach(function(track, i){
-			tracksList += '<tr><td style="width:130px"><a target="_blank" href="' + track.url + '"><img src="/dist/images/playbutton.png" alt="..." /></a></td>'
-			tracksList += '<td><h5><a target="_blank" href="' + track.url + '">' + track.name + '</a></h5><p>Uploaded: ' + track.timestamp + '</p></td>'
-			tracksList += '<td><h4 class="price">$40</h4></td></tr>'
-		})
+		if (tracks != null){
+			currentUser.tracks.forEach(function(track, i){
+				tracksList += '<tr><td style="width:130px"><a target="_blank" href="' + track.url + '"><img src="/dist/images/playbutton.png" alt="..." /></a></td>'
+				tracksList += '<td><h5><a target="_blank" href="' + track.url + '">' + track.name + '</a></h5><p>Uploaded: ' + track.timestamp + '</p></td>'
+				tracksList += '<td><h4 class="price">$40</h4></td></tr>'
+			})
+		}
 
 		$('#tracks-table').html(tracksList)
 	}
