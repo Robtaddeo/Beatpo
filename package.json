@@ -33,7 +33,8 @@
     "dashboard.html.html",
     "indexcopy.html",
     "register.html",
-    "dash.html"
+    "dash.html",
+    "upload.html"
   ],
   "app": "59ce9f1f448851001216bdb7"
 }

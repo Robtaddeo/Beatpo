@@ -197,6 +197,15 @@
 	})
 })
 
+	$("#btn-play").click(function(){
+	    $("#album-img").animate({
+	        left: '250px',
+	        opacity: '0.5',
+	        height: '150px',
+	        width: '150px'
+	    })
+	})
+
 	// if (currentUser == null){
 	// 	$('#login-logout').html("Login")
 	// }
